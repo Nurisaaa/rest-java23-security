@@ -47,7 +47,7 @@ public class AuthService {
         User user = new User(
                         registerRequest.getEmail(),
                         passwordEncoder.encode(registerRequest.getPassword()),
-                        "USER");
+                        "ROLE_USER");
 
         userRepository.save(user);
 
